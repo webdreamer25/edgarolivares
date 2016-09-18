@@ -1,0 +1,123 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+
+.valign {
+  float:none !important;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.text-center {text-align:center;}
+.text-shadow{
+  text-shadow:2px 2px 12px rgba(0,0,0,0.18);
+  -moz-text-shadow:2px 2px 12px rgba(0,0,0,0.18);
+  -webkit-text-shadow:2px 2px 12px rgba(0,0,0,0.18);}
+
+// Floats
+// -------------------------
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+.center-block {
+  @include center-block;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+	
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+}
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}
+
+// Margins and Padding
+// -------------------------
+.margin-top {margin-top:20px;}
+.margin-bottom {margin-bottom:30px;}
+.padding-top {padding-top:15px;}
+.padding-bottom {padding-bottom:15px;}
+.padding-top-bottom {padding-top:15px; padding-bottom:15px;}
+
+// Special Borders
+// -------------------------
+.border-left-triangle,
+.border-right-triangle {
+  position:relative;z-index:1;
+  &:after,
+  &:before {top:32px;}
+}
+
+.border-left-triangle {
+  border-left:4px solid #ccc;
+  &:after {
+    width:0;
+    height:0;
+    content:'';
+    display:block;
+    position:absolute;
+    left:0;
+    z-index:2;
+    border-top:8px solid transparent;
+    border-bottom:8px solid transparent;
+    border-left:8px solid #ccc;}
+}//.border-left-triangle
+
+.border-right-triangle {
+  border-right:4px solid #ccc;
+  &:before {
+    width:0;
+    height:0;
+    content:'';
+    display:block;
+    position:absolute;
+    right:0;
+    z-index:2;
+    border-top:8px solid transparent;
+    border-bottom:8px solid transparent;
+    border-right:8px solid #ccc;}
+}//.border-right-triangle
+
+.bg-danger, .bg-sucess {
+  background:red;
+  color:#fff;
+  padding:12px;
+  margin:0;}
+.bg-success {color:#dadada;background:lightblue;}

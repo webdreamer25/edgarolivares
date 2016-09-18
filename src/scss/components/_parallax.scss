@@ -1,0 +1,44 @@
+//
+// Parallax
+// --------------------------------------------------
+
+.parallax {
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center center;
+	background-size:cover;
+	padding:0;
+	.inner {
+		padding:180px 0;
+		.caption {
+			font-weight:300;
+			color:#fff;
+			text-shadow:2px 2px 0 rgba(0,0,0,0.5);
+			padding:0 20px;
+			margin-bottom:0;}
+	}//.inner
+	.inner.lrg {padding:250px 0;}
+}//.parallax
+
+.bg-o-black {background-color:rgba(0,0,0,0.65);}
+
+@media (max-width:$screen-sm-max) {
+	.parallax {
+		background-attachment:inherit;
+		background-size:cover;
+		.inner {
+			padding:115px 0;
+			.caption {font-size:40px;line-height:48px;}
+		}//.inner
+		.inner.lrg {padding:180px 0;}
+	}//.parallax
+}
+@media (max-width:$screen-xs-max) {
+	.parallax {
+		.inner {
+			padding:130px 0;
+			.caption {font-size:30px;line-height:36px;}
+		}//.inner
+		.inner.lrg {padding:160px 0;}
+	}//.parallax
+}

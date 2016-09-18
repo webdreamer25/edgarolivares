@@ -1,0 +1,58 @@
+//
+// Callouts
+// --------------------------------------------------
+
+.callout {
+	.inner-container {
+		overflow:hidden;
+		border:1px solid $border-lt;}
+	.image {
+		max-height:212px;
+		position:relative;
+		overflow:hidden;
+		.title {
+			width:205px;
+			color:#fff;
+			font-weight:500;
+			position:absolute;
+			bottom:0;
+			left:0;
+			text-align:center;
+			text-transform:uppercase;
+			background:rgba(0,0,0,0.65);
+			padding:15px 10px;
+			margin-bottom:20px;}
+	}//.image
+	.content {
+		min-height:180px;
+		position:relative;
+		padding:20px 0 0;
+		> a.btn {
+			position:absolute;
+			bottom:0;
+			left:0;
+			right:0;
+			margin:20px 0 0;}
+	}//.content
+}//.callout
+
+.horizontal .callout:nth-child(2) .title {width:100% !important;right:0 !important;}
+.horizontal .callout:nth-child(3) .title {left:auto;right:0;}
+
+@media (max-width:$screen-md-max) {
+	.callout .content {
+		min-height:auto;
+		> a.btn {width:100%;position:static;}
+	}// .callout .content
+	.horizontal .callout:nth-child(2) {margin:30px 0;}
+	.horizontal .callout:nth-child(2) .title {width:205px;right:auto;}
+	.horizontal .callout:nth-child(3) .title {left:0;right:auto;}
+}
+@media (max-width:$screen-sm-max) {
+	.callout .title {
+		width:100% !important;
+		top:0 !important;
+		right:0 !important;
+		bottom:auto !important;
+		margin:0;}
+}

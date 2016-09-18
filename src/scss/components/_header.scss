@@ -1,0 +1,39 @@
+// Main Header
+
+header {
+	width:100%;
+	height:107px;
+	background:rgba(0,0,0,0);
+	position:fixed;
+	z-index:99;
+	-webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+	.logo {
+		max-width:106px;
+		display:inline-block;
+		padding:8px 15px 8px 0;
+
+		-webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+	    -o-transition: all 0.3s;
+	    transition: all 0.3s;
+	}// end logo
+} // end header
+
+.smaller {
+	height:70px;
+	background:rgba(0,0,0,0.7);
+	.logo {max-width:69px;}
+}
+
+@media (max-width:$screen-sm-max) {
+	header {
+		height:90px;
+		.logo {max-width:89px;}
+	}
+}
+

@@ -1,0 +1,39 @@
+// EMPLOYMENT
+
+#employment {
+	position:relative;
+	.job {
+		margin-bottom:40px;
+		.media {
+			h4 {margin-bottom:0;}
+			.fa-suitcase {font-size:35px;line-height:35px;margin-right:10px;}
+			.year {
+				font-size:14px;
+				color:#ff0214;
+				margin-bottom:20px;
+				> i {font-size:13px;color:#000;}
+			}// .year
+		}// .media
+		ul > li {margin-bottom:8px;}
+	}// .job
+	&:after {
+		width:0;
+		height:0;
+		content:'';
+		position:absolute;
+		left:50%;
+		bottom:-30px;
+		border-left:30px solid transparent;
+		border-right:30px solid transparent;
+		border-top:30px solid #fff;
+		margin-left:-30px;
+		z-index:2;}
+}// #employment
+
+@media (max-width:$screen-md-max) {
+	#employment .job {
+		border-bottom:1px dashed #ccc;
+		padding-bottom:20px;
+		margin-bottom:25px;}
+	#employment .job.last {border-bottom:none;}
+}

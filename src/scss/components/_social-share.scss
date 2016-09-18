@@ -1,0 +1,18 @@
+// Social Share
+
+.social-share {
+	position:absolute;
+	top:0;
+	right:0;
+	list-style:none;
+	padding:0;
+	margin:0;
+	li {
+		color:$breadcrumb-color;
+		display:inline-block;
+		> a {
+			font-size:18px;
+			color:$breadcrumb-color;
+			margin:0 5px;}
+	}
+}

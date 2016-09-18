@@ -1,0 +1,49 @@
+//
+// Widgets
+// --------------------------------------------------
+
+
+.widget {
+  border-right:1px dashed $border-med;
+  &:last-child {border-right:none;}
+  .content {
+    min-height:300px;
+    position:relative;
+    padding:20px 15px;
+    .title {
+      width:100%;
+      text-align:center;
+      display:inline-block;
+      background-color:#fff;
+    }
+    > p {margin-top:10px;margin-bottom:50px;}
+    .btn {
+      display:block;
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:20px;
+      margin:0 20px;}
+  }// .content
+}// .widget
+
+.widget2 {
+  .title {
+    font-size:20px;
+    line-height:22px;
+    margin-bottom:5px;}
+  h4{margin-bottom:10px;}
+  a {color:$header-link-hover;}
+}// .widget2 
+.widget2 + .widget2 {margin-top:40px;}
+
+@media (max-width:$screen-lg-max) {
+  .widget .content {min-height:350px;}
+}
+@media (max-width:$screen-md-max) {
+  .widget .content {
+    min-height:100px;
+    > p {margin-bottom:34px;}
+    .btn {position:static;margin:0;}
+  }
+}

@@ -1,0 +1,67 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+*,
+*:before,
+*:after {
+  box-sizing:border-box;
+ -moz-box-sizing:border-box;
+ -webkit-box-sizing:border-box
+}
+
+
+// Body reset
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family:'Roboto', arial,helvetica,sans-serif;
+  font-size:18px;
+  line-height:22px;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+// Links
+
+a,
+a:active,
+a:visited {text-decoration:none;}
+
+
+// Figures
+//
+// We reset this here because previously Normalize had no `figure` margins. This
+// ensures we don't break anyone's use of the element.
+
+figure {
+  margin: 0;
+}
+
+
+// Images
+
+img {
+  vertical-align: middle;
+}
+
+// Responsive images (ensure images don't scale beyond their parents)
+.img-responsive {
+  @include img-responsive;
+}
+
+section {padding:40px 0;}

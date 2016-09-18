@@ -1,0 +1,217 @@
+//
+// Typography
+// --------------------------------------------------
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Roboto', arial, helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: $primary-heading;
+
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: $secondary-heading;
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+h1, .h1 {font-size:50px;}
+h2, .h2 {font-size:26px;}
+h3, .h3 {font-size:20px;}
+h4, .h4 {font-size:16px;}
+// h5, .h5 {font-size:20px;}
+// h6, .h6 {font-size:18px;}
+
+@media (max-width:$screen-md-max) {
+  h2, .h2 {font-size:32px;}
+}
+@media (max-width:$screen-sm-max) {
+  h2, .h2 {font-size:25px;}
+  h4, .h4 {font-size:20px;}
+}
+
+// Body text
+// -------------------------
+
+p {
+  margin: 0 0 5px;
+}
+
+.lead {
+  width:100%;
+  background-color:#ffd50e;
+  text-align:center;
+  padding:40px 60px;
+  margin-bottom:60px;
+  font-size:22px;
+  line-height:28px;
+  font-weight:300;
+
+  @media (max-width:$screen-sm-max) {
+    font-size:18px;
+    line-height:26px;
+  }
+
+  @media (max-width:$screen-xs-max) {
+    padding:30px 15px;
+  }
+}
+
+.lead.tri {
+  position:relative;
+  &:after{
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #ffd50e;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -30px;}
+}
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+// Page header
+// -------------------------
+
+// .page-header {
+//   padding-bottom: (($line-height-computed / 2) - 1);
+//   margin: ($line-height-computed * 2) 0 $line-height-computed;
+//   border-bottom: 1px solid $page-header-border-color;
+// }
+
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+// List options
+
+// [converter] extracted from `.list-unstyled` for libsass compatibility
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+// [converter] extracted as `@mixin list-unstyled` for libsass compatibility
+.list-unstyled {
+  @include list-unstyled;
+}
+
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled;
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+// Opposite alignment of blockquote
+//
+// Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
+.blockquote-reverse,
+blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #e1e1e1;
+  border-left: 0;
+  text-align: right;
+
+  // Account for citation
+  footer,
+  small,
+  .small {
+    &:before { content: ''; }
+    &:after {
+      content: '\00A0 \2014'; // nbsp, em dash
+    }
+  }
+}
+
+// Addresses
+address {
+  margin-bottom: 10px;
+  font-style: normal;
+}
+
+.section-heading {
+  display:inline-block;
+  position:relative;
+  padding-bottom:10px;
+  margin-bottom:30px;
+  .hr {
+    width:100%;
+    height:2px;
+    position:absolute;
+    left:0;
+    bottom:5px;
+    display:block;
+    background-color:#ffd50e;
+    &:before {
+      width:0;
+      height:0;
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-8px;
+      border-top:0 solid transparent;
+      border-bottom:8px solid transparent;
+      border-left:8px solid #ffd50e;}
+  }// .hr
+}// .section-heading

@@ -1,0 +1,51 @@
+/* 
+	Author: Edgar Olivares
+	version: 1.2
+	Email: edgarolivares29@yahoo.com
+*/
+
+// Core
+@import "mixins/mixins";
+@import "mixins/image";
+@import "mixins/border-radius";
+@import "mixins/center-block";
+@import "mixins/gradients";
+@import "mixins/hide-text";
+@import "mixins/opacity";
+@import "mixins/reset-text";
+@import "mixins/shadow";
+@import "mixins/size";
+
+// Utilities
+@import "utilities/utilities";
+@import "utilities/responsive-sizes";
+@import "utilities/responsive-utilities";
+
+// Base
+@import "base/colors";
+@import "base/type";
+@import "base/grid";
+@import "base/tables";
+@import "base/forms";
+@import "base/scaffolding";
+
+// templates
+@import "templates/home";
+@import "templates/about";
+@import "templates/employment";
+@import "templates/portfolio";
+@import "templates/contact";
+
+// Components
+@import "components/header";
+@import "components/footer";
+@import "components/jumbotron.scss";
+@import "components/navbar";
+@import "components/widgets";
+@import "components/buttons";
+@import "components/modals";
+@import "components/callouts";
+@import "components/parallax";
+@import "components/carousel";
+@import "components/media";
+@import "components/photo-embed";

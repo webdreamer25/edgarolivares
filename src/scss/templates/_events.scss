@@ -1,0 +1,27 @@
+//
+// Events Page
+// --------------------------------------------------
+
+
+.event {
+	background-color:$lightgray;
+	padding:20px 30px;
+	margin-bottom:40px;
+	.image {
+		position:relative;
+	}//.image
+	.title {
+		> span {
+			font-size:18px;
+			display:block;
+			font-weight:normal;
+			color:$primary-red;}
+		margin-bottom:20px;
+	}// .title
+	.content {
+		margin-top:20px;
+		p {margin-bottom:15px;}
+	}//.content
+}// .event
+
+// .event + .event {margin-top:40px}

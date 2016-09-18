@@ -1,0 +1,25 @@
+//
+// Modals
+// --------------------------------------------------
+
+
+.modal,
+.overlay{opacity:0;position:fixed;}
+.overlay {
+  width:100%;
+  height:100%;
+  cursor:pointer;
+  background:#000;
+  top:0;
+  left:0;
+  z-index:900;}
+.modal {
+  top:50%;
+  left:50%;
+  /*background-color:#fff;*/
+  z-index:901;
+  box-shadow:4px 4px 8px rgba(0,0,0,0.35);
+  -moz-box-shadow:4px 4px 8px rgba(0,0,0,0.35);
+  -webkit-box-shadow:4px 4px 8px rgba(0,0,0,0.35);}
+.modal img {min-width:300px;height:auto;max-width:100%;display:block;}
+.modal .close {font-size:14px;color:#fff;position:absolute;bottom:-30px;}

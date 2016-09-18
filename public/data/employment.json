@@ -1,0 +1,49 @@
+{
+	"jobs": [
+		{
+			"Aware": [
+				"Applied front end web development skills to implement complex solutions for custom websites, ecommerce and content management systems in a .NET evironment.",
+				"Used bootstrap 3.0 to develop mobile first template and boiler plates.",
+				"Used a modular approach to HTML, CSS and Javascript to maximize code reusability.",
+				"Used SVN and GIT for collaborative work and version control.",
+				"Worked with the UX Design team to code and implement sites that met clients' requirements and accurately represented the intended design and functionality.",
+				"Worked with UX, UCD, CS and IA to ensure that sites followed W3C accessibility standards, including WCAG 2.0 and s508 guidelines/requirements.",
+				"Worked with the Back End Developer team to maximize code re-usability and efficiency for implementation into the Sitecore CMS.",
+				"Worked on multiple front end projects simultaneously.",
+				"Created documents and completed tasks for the front end development of projects.",
+				"Identified areas where the team can gain efficiencies.",
+				"Provided frequent status updates on projects.",
+				"Worked in an Agile Environment utilizing the 10 key principles of Agile."
+			]
+		},
+		{
+			"Outsell": [
+				"Coded advanced email campaign templates that are cross client compatible and come mobile ready using HTML and CSS.",
+				"Used GIT with the help of Source Tree to ensure version control on collaborative project(s).",
+				"Worked on microsites and landing pages using HTML5, CSS3, Javascript and Jquery framework that were mobile ready and cross browser compatible.",
+				"Utilized accesibility standards from the WCAG and s508 guidelines maximizing usability and improving user experience.",
+				"Updated site template and migrated old HTML templates to work and use latest W3C technologies.",
+				"Designed forms and banners to use on dealer email campaigns or websites."
+			]
+		},
+		{
+			"Freelance": [
+				"Website wireframing, overall design concept and execution.",
+				"Front-end development including HTML5, CSS3 and jQuery.",
+				"Leveraged Bootstrap 3.0 and it's various components.",
+				"Company Branding including logo design, slogan, advertising and marketing in various social mediums",
+				"Worked on multiple front end projects simultaneously.",
+				"Updating and maintaining website code and content."
+			]
+		},
+		{
+			"Crees": [
+				"Daily maintenance and improvement of design.",
+				"Project management for all web development & graphic design.",
+				"Front-end development including HTML5, CSS3, jQuery using the Word press framework.",
+				"Refine and iterate user experience by designing and implementing new modules and interfaces.",
+				"Complete re-design of church logo and other mediums."
+			]
+		}
+	]
+}

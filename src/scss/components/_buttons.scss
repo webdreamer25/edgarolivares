@@ -1,0 +1,40 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+.btn {
+	color:#fff !important;
+	text-align:center;
+	display:inline-block;}
+.btn:hover {background-color:$header-link-hover !important;}
+
+a.btn-link {
+	font-size:14px;
+	color:#000;
+	> i {
+		font-size:14px;
+		color:$header-link-hover;
+		margin-left:0px;
+		transition:all 0.1s ease-in;
+		-moz-transition:all 0.1s ease-in;
+		-webkit-transition:all 0.1s ease-in;}
+	&:hover {color:$header-link-hover;}
+	&:hover > i {
+		margin-left:10px;
+		transition:all 0.1s ease-out;
+		-moz-transition:all 0.1s ease-out;
+		-webkit-transition:all 0.1s ease-out;}
+}// .btn-link
+
+// Button Colors
+.btn.primary {background-color:$primary-btn-color;}
+.btn.secondary {background-color:$secondary-btn-color;}
+
+// Button Sizes
+.btn.small {font-size:14px;padding:4px 10px;}
+.btn.medium {font-size:18px;padding:8px 20px;}
+.btn.large {font-size:20px;padding:15px 40px;}
+
+[data-toggle=buttons] input[type=radio],
+[data-toggle=buttons] input[type=checkbox] {display:none !important;}

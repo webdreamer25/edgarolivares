@@ -1,0 +1,27 @@
+//
+// Thumbnails
+// --------------------------------------------------
+
+
+// Mixin and adjust the regular image class
+.card {
+	display: block;
+	margin-bottom: $line-height-computed;
+	line-height: 24px;
+	background-color: $thumbnail-bg;
+	
+  > img,
+  a > img {
+    @include img-responsive;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // [converter] extracted a&:hover, a&:focus, a&.active to a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active
+
+  // Image captions
+  .caption {
+    padding: 20px;
+    color: $thumbnail-caption-color;
+  }
+}

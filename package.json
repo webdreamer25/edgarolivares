@@ -1,0 +1,35 @@
+{
+  "name": "protoculture2",
+  "version": "2.0.0",
+  "description": "Tool that allows users to better collaborate, make changes and present UX prototypes.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "license": "ISC",
+  "author": "Edgar Olivares",
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.13.6",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-webserver": "^0.9.1",
+    "tsify": "^1.0.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webdreamer25/edgarolivares.git"
+  },
+  "dependencies": {
+    "jquery": "^2.1.0",
+    "lodash": "^4.15.0"
+  }
+}
