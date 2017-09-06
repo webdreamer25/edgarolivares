@@ -83,7 +83,7 @@
 }
 @media (max-width:$screen-sm-max) {
 	#portfolio {
-		.portfolio-item > img {margin:0 auto !Important;}
+		.portfolio-item > img {margin:0 auto !important;}
 		.grid-sizer,
 		.portfolio-item {width:50%}
 	}

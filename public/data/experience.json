@@ -1,7 +1,41 @@
 {
-	"jobs": [
+	"experience": [
 		{
-			"Aware": [
+			"company": "Wellsfargo/TekSystems",
+			"title": "UX/UI Engineer",
+			"duration": "2016 - Present",
+			"responsibilities": [
+				"Responsible for delivering a strong User Experience",
+				"Rapidly turned UI ideas into prototypes using CSS, JavaScript and HTML 5.",
+				"Created internal applications with OpenText's Web Experience Manager.",
+				"Worked together with Java developers to turn server side apps into client side apps using HTML 5, CSS, Backbone/Marionette JS and jQuery AJAX.",
+				"Used AJAX to connect front-end UI using ReSTful APIs.",
+				"Prepared user guides to assist QA and LOB with testing.",
+				"Mentored Junior Front-end Engineers.",
+				"Responsible for setting code standards.",
+				"Used SVN and GIT for version control",
+				"Used IntelliJ IDEA."
+			]
+		},
+		{
+			"company": "3M/LCI",
+			"title": "UX Prototyper/Front-end Engineer",
+			"duration": "2016 - 2016",
+			"responsibilities": [
+				"Was part of the Architecture & Framework (A&F) team. Together with a team of back-end and front-end engineers I was responsible for maintaining, debugging and optimizing 3m.com existing design pattern library.",
+				"Utilize the Agile, Scrum and Lean UX methodologies.",
+				"Utilize advance JavaScript techniques such as prototypes leveraging jQuery to extend objects, DOM traversal and event handling",
+				"Used Grunt JS as out task runner to compile/tranpile 3M SASS and JS.",
+				"Used Require JS Asynchronous Module Definition (AMD) to deliver the JS and all dependencies to the browser.",
+				"Used Bitbucket as our method of version control and Git bash to run all our Git commands.",
+				"As a UX prototyper I worked with the UX team which consisted of a UX designer, UX researcher and product owner using the \"Lean UX\" methodology to turn out rapid high fidelity prototypes of new DPL, Sites and landing pages."
+			]
+		},
+		{
+			"company": "Aware Web Solutions",
+			"title": "Front-end Web Developer",
+			"duration": "2014 - 2016",
+			"responsibilities": [
 				"Applied front end web development skills to implement complex solutions for custom websites, ecommerce and content management systems in a .NET evironment.",
 				"Used bootstrap 3.0 to develop mobile first template and boiler plates.",
 				"Used a modular approach to HTML, CSS and Javascript to maximize code reusability.",
@@ -17,7 +51,10 @@
 			]
 		},
 		{
-			"Outsell": [
+			"company": "Outsell",
+			"title": "Front-end Web Developer",
+			"duration": "2013 - 2014",
+			"responsibilities": [
 				"Coded advanced email campaign templates that are cross client compatible and come mobile ready using HTML and CSS.",
 				"Used GIT with the help of Source Tree to ensure version control on collaborative project(s).",
 				"Worked on microsites and landing pages using HTML5, CSS3, Javascript and Jquery framework that were mobile ready and cross browser compatible.",
@@ -27,7 +64,10 @@
 			]
 		},
 		{
-			"Freelance": [
+			"company": "Freelance",
+			"title": "Logo Design / Web Designer / Front-end Web Developer",
+			"duration": "2010 - 2012",
+			"responsibilities": [
 				"Website wireframing, overall design concept and execution.",
 				"Front-end development including HTML5, CSS3 and jQuery.",
 				"Leveraged Bootstrap 3.0 and it's various components.",
@@ -37,7 +77,10 @@
 			]
 		},
 		{
-			"Crees": [
+			"company": "CREES Ministries",
+			"title": "Logo Design / Web Designer / Front-end Web Developer",
+			"duration": "2010 - 2012",
+			"responsibilities": [
 				"Daily maintenance and improvement of design.",
 				"Project management for all web development & graphic design.",
 				"Front-end development including HTML5, CSS3, jQuery using the Word press framework.",

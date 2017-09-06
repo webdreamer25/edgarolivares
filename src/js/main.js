@@ -1,3 +1,5 @@
+'use strict'
+
 $(window).scroll(function() {
 	// Shrinks header on scroll
 	var _header = $('header');
@@ -5,10 +7,10 @@ $(window).scroll(function() {
 			shrinkOn = 10;
 
 	if (distanceY > shrinkOn) {
-		_header.addClass('smaller');
+		_header.addClass('smaller').css('background','rgba(0,0,0,0.75)');
 	} else { 
 		if (_header.hasClass('smaller')) {
-			_header.removeClass('smaller');
+			_header.removeClass('smaller').css('background','rgba(0,0,0,0)');
 		}
 	}
 
@@ -16,9 +18,9 @@ $(window).scroll(function() {
 	$('[data-animate]').each(function() {
 		var $this = $(this);
 		var animation = $this.data('animate');
-	  var delay = $this.attr('data-animate-delay') ? $this.attr('data-animate-delay') : 0;
+	  	var delay = $this.attr('data-animate-delay') ? $this.attr('data-animate-delay') : 0;
 
-	  if ($this.is(':in-viewport') && !jQuery.browser.mobile) {
+	  	if ($this.is(':in-viewport') && !jQuery.browser.mobile) {
 			setTimeout(function() {
 				$this.removeClass('not-animated').addClass("animated").addClass(animation);
 			}, delay);
@@ -48,14 +50,7 @@ $(window).scroll(function() {
 	});
 });
 
-$(document).ready(function() {
-	'use strict';
-	// Takes away animations when viewing in mobile devices
-	if (jQuery.browser.mobile) {
-		$('[data-animate]').removeClass('not-animated');
-		// $('[data-animate]').attr('data-animate', ' ');
-		// $('[data-animate-delay]').attr('data-animate-delay', '0');
-	}
+$(document).ready(function() {	
 
 	$(function() {
 		var _windowH = $(window).height(),
@@ -222,15 +217,23 @@ $(document).ready(function() {
 		});	
 
 		// close modal when click occurs outside 
-    $(document).mouseup(function (e) {
-      var container = $('.modal');
-      if (!container.is(e.target) && container.has(e.target).length === 0) {
-        $('.modal, .overlay')
-				.animate({"opacity":"0"}, 300, "linear", function () {
-					$('.modal, .overlay').remove();
-					$('body').removeAttr('style');
-				});
-      }
-    });
+		$(document).mouseup(function (e) {
+		var container = $('.modal');
+		if (!container.is(e.target) && container.has(e.target).length === 0) {
+			$('.modal, .overlay')
+					.animate({"opacity":"0"}, 300, "linear", function () {
+						$('.modal, .overlay').remove();
+						$('body').removeAttr('style');
+					});
+		}
+		});
 	});
+
+	setTimeout(function (){
+		// Takes away animations when viewing in mobile devices
+		if (jQuery.browser.mobile) {
+			console.log($('.not-animated').length);
+			$('.not-animated').removeClass('not-animated');
+		}
+	}, 200);
 });

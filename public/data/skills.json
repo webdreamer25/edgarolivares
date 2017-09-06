@@ -1,0 +1,88 @@
+{
+  "skill-list": [
+    {
+      "name": "responsive design",
+      "level": 90
+    },
+    {
+      "name": "html 5",
+      "level": 95
+    },
+    {
+      "name": "css 3",
+      "level": 93
+    },
+    {
+      "name": "less",
+      "level": 46
+    },
+    {
+      "name": "sass",
+      "level": 90
+    },
+    {
+      "name": "node/npm",
+      "level": 81
+    },
+    {
+      "name": "svn",
+      "level": 96
+    },
+    {
+      "name": "git",
+      "level": 92
+    },
+    {
+      "name": "bootstrap",
+      "level": 98
+    },
+    {
+      "name": "javascript/ES6/ES7",
+      "level": 91
+    },
+    {
+      "name": "jquery",
+      "level": 95
+    },
+    {
+      "name": "underscore",
+      "level": 91
+    },
+    {
+      "name": "require js",
+      "level": 73
+    },
+    {
+      "name": "browserify",
+      "level": 58
+    },
+    {
+      "name": "typescript",
+      "level": 41
+    },
+    {
+      "name": "gulp",
+      "level": 84
+    },
+    {
+      "name": "babel",
+      "level": 82
+    },
+    {
+      "name": "react js",
+      "level": 11
+    },
+    {
+      "name": "angular 2 js",
+      "level": 57
+    },
+    {
+      "name": "backbone js",
+      "level": 83
+    },
+    {
+      "name": "marionette js",
+      "level": 93
+    }
+  ]
+}

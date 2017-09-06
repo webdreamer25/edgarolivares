@@ -8,7 +8,13 @@
     backface-visibility: hidden;
 }*/
 .not-animated {
-  visibility: hidden; }
+  visibility: hidden; 
+}
+@media (max-width: 768px) {
+    .not-animated {
+        visibility: visible;
+    }
+}
 .animated {
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;

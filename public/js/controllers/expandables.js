@@ -1,0 +1,2 @@
+var Expandable=function(t){this.element=document.querySelector(t),this.height=void 0,this.setup()};Expandable.prototype.setup=function(){return this.height=this.element.height,this.handler(),this},Expandable.prototype.handler=function(){var t=this;return this.element.addEventListener("click",function(){return t.element.attribute("height",t.height+"px"),!1}),this};
+//# sourceMappingURL=../../maps/js/controllers/expandables.js.map

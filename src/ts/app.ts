@@ -1,4 +1,4 @@
-import {Assign} from './utilities/assign'
+// import {Assign} from './utilities/assign'
 
 export const App = {
 	run: () => {
